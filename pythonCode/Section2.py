@@ -57,7 +57,7 @@ LR_mulax.scatter(V,petalLength)
 LR_mulax.plot(V,petalLenMul_pred,color='red')
 LR_mulfig.savefig('LR_mul.pdf')
 #Report the t-value and p-value 
-est_mul=smf.ols('petalLength ~ petalWidth*sepalWidth', dataSet).fit()
+est_mul=smf.ols('petalLength ~ petalWidth+sepalWidth+petalWidth*sepalWidth', dataSet).fit()
 print (est_mul.summary().tables[1])
 
 dataSet.corr()  
