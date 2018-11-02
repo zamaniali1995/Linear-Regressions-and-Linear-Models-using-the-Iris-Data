@@ -2,8 +2,17 @@
 \usepackage[utf8]{inputenc}
 \usepackage{amsmath}
 \usepackage{graphicx}
+\usepackage{hyperref}
 \usepackage{listings}
 \usepackage{color}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+}
+ 
+\urlstyle{same}
 \definecolor{codegreen}{rgb}{0,0.6,0}
 \definecolor{codegray}{rgb}{0.5,0.5,0.5}
 \definecolor{codepurple}{rgb}{0.58,0,0.82}
@@ -101,8 +110,9 @@ R^2 = \frac{2(\sum_ix_iy_i)^2/\sum_jx_j^2 - (\sum_ix_iy_i)^2/\sum_jx_j^2}{\sum_j
 \section{Section2}
 Code:\\
 \lstinputlisting[language=python]{../PythonCode/Section2.py}
+Results:
 \subsubsection{A,B)}
-\includegraphics[width=15cm, height=20cm]{ss5}
+\includegraphics[width=15cm, height=17cm]{ss5}
 \subsubsection{C)}
 \includegraphics[width=6cm, height=6cm]{ScatterPlot}
 \includegraphics[width=8cm, height=6.5cm]{LR}\\\\
@@ -110,5 +120,7 @@ Code:\\
 \subsubsection{D)}\
 \includegraphics[width=8cm, height=6.5cm]{LR_mul}\\
 \includegraphics[width=15cm, height=3cm]{ss6}\\\\\\
-\includegraphics[width=15cm, height=3cm]{ss9}
+\includegraphics[width=15cm, height=3cm]{ss9}\\\\\\\\
+
+\href{https://github.com/zamaniali1995/Linear-Regressions-and-Linear-Models-using-the-Iris-Data}{Source Code}
 \end{document}
